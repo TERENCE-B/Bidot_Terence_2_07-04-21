@@ -132,12 +132,12 @@ flex-direction: column;
     grid-template-columns:2fr 1fr;
     column-gap:24px;
 }
-    
+
 @media only screen and (min-width:1250px)
 {
-    .all-herbergement
+    .all-herbergements
 {
-
+    
 }
 
 }
@@ -145,11 +145,11 @@ flex-direction: column;
 @media only screen and ( min-width: 0px) and (max-width: 1250px)
 {
 .all-hebergements
-{
+    {
  grid-template-columns:1fr;   
 row-gap:24px;
-}
-}
+        }
+    }
 
 .container-ads
 {
@@ -169,9 +169,22 @@ grid-template-rows: 240px 240px;
 .img-ad-cropped
 {
 position: absolute;
-height:100%;
-width: 100%;
+height:90%;
+width: 90%;
 border-top-right-radius: 8px;
 border-top-left-radius:8px;
 object-fit: cover;
+}
+
+.aside
+{
+display:grid;
+grid-template-columns:1fr;
+
+}
+
+.Activités
+{
+    display:grid;
+    grid-template-rows:1fr 1fr;
 }
