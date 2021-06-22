@@ -176,6 +176,13 @@ border-top-left-radius:8px;
 object-fit: cover;
 }
 
+.img-medium
+{
+height:100%; 
+Width:100%;
+   
+}
+
 .aside
 {
 
