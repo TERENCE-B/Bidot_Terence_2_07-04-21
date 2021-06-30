@@ -188,7 +188,7 @@ grid-template-rows: 240px 240px;
     }
   }
 
-  @media only screen and (min-width: 0px) and (max-width: 600px) {
+  @media only screen and (min-width: 0px) and (max-width: 400px) {
     .container-ads {
       grid-template-columns: 1fr;
       grid-template-rows: 256px 256px 256px 256px 256px 256px;
@@ -212,12 +212,6 @@ border-top-left-radius:8px;
 object-fit: cover;
 }
 
-.img-medium
-{
-height:100%; 
-Width:100%;
-
-}
 
 .aside
 {
