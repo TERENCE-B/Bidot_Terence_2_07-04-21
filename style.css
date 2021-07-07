@@ -1,6 +1,19 @@
+                            /*POLICE*/
+@font-face
+{
+	font-family: 'raleway' ,sans-serif;
+} 
+
+body{
+    font-family: 'raleaway',Arial,sans-serif;
+    font-size: 16px;
+    color: black;
+}
+                            /*HEAD*/
 header
 {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content:space-between
 }
@@ -14,6 +27,7 @@ header
 nav.conteneur /*la liste: hebergements, activités, s'inscrire */
 {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     
 }
@@ -37,6 +51,7 @@ h1 /* titre: Trouver votre hébergemnt*/
 .icone-recherche /*icone et bouton recherche*/
 {
 display: flex;
+flex-wrap: wrap;
 flex-direction: row;
 height:30px;
 color: #0065FC;
@@ -51,8 +66,10 @@ background-color:#0065FC;
 .allfiltres /*la ligne "filtres" */
 {
 display:flex;
+flex-wrap: wrap;
 flex-direction: row;
 align-items: center;
+justify-content: flex-start;
 }
 
 .iconemot /* icone et le mot*/
@@ -124,40 +141,72 @@ flex-direction: row;
 {
 background: white;
 display: flex;
+flex-wrap: wrap;
 flex-direction: column;
+
 }
 .all-hebergements
 {
     display:grid;
+    flex-wrap: wrap;
     grid-template-columns:2fr 1fr;
-    column-gap:24px;
+    column-gap:30px;
 }
 
 @media only screen and (min-width:1250px)
 {
-    .all-herbergements
-{
-    
-}
+.all-herbergements
+    {
+        grid-template-columns: 2fr 1fr;
+        column-gap: 24px;
+    }
 
 }
 
 @media only screen and ( min-width: 0px) and (max-width: 1250px)
 {
 .all-hebergements
-    {
+        {
+display:grid;
 grid-template-columns:1fr;   
-row-gap:24px;
+row-gap: 30px;
         }
-    }
+}
 
 .container-ads
 {
-display: grid;
-
+display:grid;
 grid-template-columns: repeat(3, 1fr);
 grid-template-rows: 240px 240px;
 }
+
+@media only screen and (min-width: 1250px) {
+    .container-ads {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 240px 240px;
+    }
+  }
+  
+  @media only screen and (min-width: 1000px) and (max-width: 1250px) {
+    .container-ads {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 288px 288px;
+    }
+  }
+  
+  @media only screen and (min-width: 600px) and (max-width: 1000px) {
+    .container-ads {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 256px 256px 256px;
+    }
+  }
+
+  @media only screen and (min-width: 0px) and (max-width: 400px) {
+    .container-ads {
+      grid-template-columns: 1fr;
+      grid-template-rows: 256px 256px 256px 256px 256px 256px;
+    }
+  }
 
 .img-ad
 {
@@ -176,26 +225,72 @@ border-top-left-radius:8px;
 object-fit: cover;
 }
 
-.img-medium
-{
-height:100%; 
-Width:100%;
-   
-}
 
 .aside
 {
-
 background: whitesmoke;
-display:grid;
+display:flex;
 flex-direction: column;
-grid-template-columns:1fr;
-
+height: 560px;
+padding:16px;
+border-radius: 10px;
+box-shadow: 2px 2px 5px lightgrey;
 }
 
 
 .Activités
 {
     display:grid;
-    grid-template-rows:1fr 1fr;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+                                                /*     FOOTER      */
+footer {
+background: whitesmoke;
+height: 100%;
+width: 100%;
+position:absolute;
+margin-top: 25px;
+}
+
+.nav-footer {
+list-style-type: none;
+padding: 32px 0 0 0;
+}
+
+.nav-footer li {
+font-size: 15px;
+padding: 8px;
+}
+
+.nav-footer a {
+color: black;
+text-decoration: none;
+}
+
+.nav-footer a:hover {
+text-decoration: underline;
+}
+
+.flexbox-footer {
+display: flex;
+flex-wrap: wrap;
+justify-content:space-evenly;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 600px) {
+footer {
+    height: 500px;
+}
+
+.flexbox-footer {
+    flex-direction: column;
+}
+
+.nav-footer {
+    list-style-type: none;
+    padding: 32px 0 0 32px;
+}
 }
