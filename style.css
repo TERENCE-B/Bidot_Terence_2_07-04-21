@@ -144,6 +144,7 @@ flex-direction: row;
 background: white;
 display: flex;
 flex-wrap: wrap;
+justify-content: space-between;
 flex-direction: column;
 
 }
@@ -151,6 +152,7 @@ flex-direction: column;
 {
     display:grid;
     flex-wrap: wrap;
+    justify-content: space-between;
     grid-template-columns:2fr 1fr;
     column-gap:30px;
 }
@@ -231,18 +233,29 @@ border-top-left-radius:8px;
 object-fit: cover;
  
 }
+.container-ads2
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr;
+    height: 480px;
+}
 
 .aside
 {
 background: whitesmoke;
 display:flex;
+justify-content: space-between;
 flex-direction: column;
-height:550px;
 padding:16px;
 border-radius: 10px;
 box-shadow: 2px 2px 5px lightgrey;
 }
 
+h3
+{
+    height: 25px;
+}
 
 .Activités
 {
@@ -255,10 +268,7 @@ box-shadow: 2px 2px 5px lightgrey;
                                                 /*     FOOTER      */
 footer {
 background: whitesmoke;
-height: 100px;
-width: 100px;
-position:absolute;
-margin-top: 25px;
+
 }
 
 .nav-footer {
@@ -289,7 +299,8 @@ justify-content:space-evenly;
 @media only screen and (min-width: 0px) and (max-width: 600px) 
 {
 footer {
-    height: 500px;
+    height: max-content;
+    width: max-content;
 }
 
 .flexbox-footer {
