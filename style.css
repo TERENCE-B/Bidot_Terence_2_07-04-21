@@ -4,7 +4,9 @@
 	font-family: 'raleway' ,sans-serif;
 } 
 
-body{
+
+body
+{
     font-family: 'raleaway',Arial,sans-serif;
     font-size: 16px;
     color: black;
@@ -15,7 +17,7 @@ header
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content:space-between
+    justify-content:space-between;
 }
 
 #Logo img /*logo reservia*/
@@ -144,61 +146,18 @@ flex-direction: row;
 background: white;
 display: flex;
 flex-wrap: wrap;
-justify-content: space-between;
+justify-content: space-around;
 flex-direction: column;
-
 }
+
 .all-hebergements
 {
     display:grid;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     grid-template-columns:2fr 1fr;
     column-gap:30px;
 }
-
-@media only screen and (min-width:1250px)
-{
-.all-herbergements
-    {
-        grid-template-columns: 2fr 1fr;
-        column-gap: 24px;
-    }
-
-}
-
-@media only screen and ( min-width: 0px) and (max-width: 1250px)
-{
-.all-hebergements
-        {
-display:grid;
-grid-template-columns:1fr;   
-row-gap: 30px;
-        }
-}
-
-
-
-@media only screen and (min-width: 1250px) {
-    .container-ads {
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: 240px 240px;
-    }
-  }
-  
-  @media only screen and (min-width: 600px) and (max-width: 1200px) {
-    .container-ads {
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: 256px 256px 256px;
-    }
-  }
-
-  @media only screen and (min-width: 0px) and (max-width: 600px) {
-    .container-ads {
-      grid-template-columns: 1fr;
-      grid-template-rows: 256px 256px 256px 256px 256px 256px;
-    }
-  }
 
 .container-ads
 {
@@ -221,19 +180,25 @@ width: 80%;
 border-top-right-radius: 8px;
 border-top-left-radius:8px;
 object-fit: cover;
+}
 
+.img-ad2
+{
+    position: relative;
+    flex:2;
+    z-index:15;
 }
 .img-ad-cropped2
 {
-position: absolute;
-height:120%;
-width: 80%;
-border-top-right-radius: 8px;
-border-top-left-radius:8px;
-object-fit: cover;
- 
+    position: absolute;
+    height:80%;
+    width: 80%;
+    border-top-right-radius: 8px;
+    border-top-left-radius:8px;
+    object-fit: cover;  
 }
-.container-ads2
+
+.container-adsa
 {
     display: grid;
     grid-template-columns: 1fr;
@@ -245,7 +210,8 @@ object-fit: cover;
 {
 background: whitesmoke;
 display:flex;
-justify-content: space-between;
+flex-wrap: wrap;
+justify-content: space-around;
 flex-direction: column;
 padding:16px;
 border-radius: 10px;
@@ -257,58 +223,80 @@ h3
     height: 25px;
 }
 
-.Activités
-{
-    display:grid;
-    flex-wrap: wrap;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-}
-
                                                 /*     FOOTER      */
-footer {
+
+.flexbox-footer 
+{
 background: whitesmoke;
-
-}
-
-.nav-footer {
-list-style-type: none;
+position: absolute;
+width: 100%;
+height: 16rem;
+display: flex;
+justify-content:space-around;
 padding: 32px 0 0 0;
 }
-
-.nav-footer li {
-font-size: 15px;
-padding: 8px;
-}
-
-.nav-footer a {
-color: black;
-text-decoration: none;
-}
-
-.nav-footer a:hover {
-text-decoration: underline;
-}
-
-.flexbox-footer {
-display: flex;
-flex-wrap: wrap;
-justify-content:space-evenly;
-}
-
-@media only screen and (min-width: 0px) and (max-width: 600px) 
+.nav-footer li 
 {
-footer {
-    height: max-content;
-    width: max-content;
-}
-
-.flexbox-footer {
-    flex-direction: row;
-}
-
-.nav-footer {
     list-style-type: none;
-    padding: 32px 0 0 32px;
+    font-size: 15px;
+    padding: 8px;
 }
+    
+.nav-footer a 
+{
+    color: black;
+    text-decoration: none;
 }
+    
+.nav-footer a:hover 
+{
+    text-decoration: underline;
+}
+
+                                    /*       SCREEN      */
+                                    
+@media only screen and (min-width: 950px)
+{
+    .container-ads {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 240px 240px;
+    }
+    
+
+  }
+  
+  @media only screen and (min-width: 350px) and (max-width: 950px) 
+  {
+    .container-ads 
+    {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 256px 256px 256px;
+    }
+    .container-ads2
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .all-herbergements
+    {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 24px;
+    }
+    
+  }
+
+  @media only screen and (min-width: 0px) and (max-width: 350px) 
+  {
+    .container-ads 
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows: 256px 256px 256px 256px 256px 256px;
+    }
+    .all-hebergements
+    {
+        display:grid;
+        grid-template-columns:1fr;   
+        row-gap: 30px;
+    }
+  }
