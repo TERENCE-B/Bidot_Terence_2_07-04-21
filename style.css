@@ -85,7 +85,7 @@ justify-content:flex-start;
 display: flex;
 flex-direction: row;
 border: 2px solid #0065FC;
-margin: 6px;
+margin: 12px;
 align-items: center;
 height: 35px;
 border-top-right-radius: 19px 50%;
@@ -146,7 +146,7 @@ padding: 6px;
 }
 
 .block
-{
+{   
     background: whitesmoke;
     padding:16px;
     border-radius: 10px;
@@ -171,8 +171,7 @@ padding: 6px;
 }
 
 .container-ads
-{
-    display:grid;
+{   display:grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 260px 260px;
     row-gap: 15px;
