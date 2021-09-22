@@ -90,7 +90,7 @@ justify-content:flex-start;
 {
 display: flex;
 flex-direction: row;
-border: 2px solid #0065FC;
+border: 2px solid #D3D3D3;
 margin: 12px;
 align-items: center;
 height: 35px;
@@ -118,11 +118,12 @@ border-bottom-left-radius: 19px 50%;
 {
 margin: 1px;
 padding: 6px;
+
 }
 
 .eco                                   /*icone eco*/
 {
-    border:2px solid #0065FC; 
+    border:2px solid #deebff; 
     border-radius:50%;
     margin: -2px;
     padding: 8px;
@@ -132,7 +133,7 @@ padding: 6px;
 
 .Familial                           /*icone Familial*/
 {
-    border:2px solid #0065FC; 
+    border:2px solid #deebff; 
     border-radius:50%;
     margin: -2px;
     padding: 8px;
@@ -144,7 +145,7 @@ padding: 6px;
 
 .Romantique                         /*icone romantique*/
 {
-    border:2px solid #0065FC; 
+    border:2px solid #deebff; 
     border-radius:50%;
     margin: -2px;
     padding: 8px;
@@ -153,7 +154,7 @@ padding: 6px;
 }
 .Dog                                /*icone chien*/
 {
-    border:2px solid #0065FC; 
+    border:2px solid #deebff; 
     border-radius:50%;
     margin: -2px;
     padding: 8px;
@@ -183,18 +184,27 @@ padding: 6px;
     box-shadow: 2px 2px 5px lightgrey;
     width: 65%;
 }
+h2
+{
+    width: 300px;
+    height: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 14px;
+}
 .container-ads
 {   display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     row-gap: 14px;
+    height: 83%;
 }
 
 .block
 {   
     background: whitesmoke;
     padding:16px;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 2px 2px 5px lightgrey;
 }
 .block-ad
@@ -204,8 +214,10 @@ padding: 6px;
     flex-wrap: wrap;
     justify-content: space-around;
     flex-direction: column;
-    height: 240px;
-    width: 220px;
+    height: 200px;
+    width: 255px;
+    padding: 5px;
+    padding-bottom: 10px;
 }
 .block.block-ad:hover 
 {
