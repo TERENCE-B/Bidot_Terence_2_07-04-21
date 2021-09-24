@@ -13,9 +13,9 @@ body
 
 h3
 {
+    display: flex;
+    flex-wrap: wrap;
     font-size: medium;
-    margin:7px 0px 10px;
-
 }
                                             /*HEAD*/
 header
@@ -90,7 +90,7 @@ justify-content:flex-start;
 {
 display: flex;
 flex-direction: row;
-border: 2px solid #0065FC;
+border: 2px solid whitesmoke;
 margin: 12px;
 align-items: center;
 height: 35px;
@@ -179,25 +179,19 @@ padding: 6px;
     display: flex;
     flex-wrap: wrap;
     background: whitesmoke;
-    padding:16px;
-    border-radius: 10px;
+    padding: 30px;
+    border-radius: 20px;
     box-shadow: 2px 2px 5px lightgrey;
-    width: 65%;
+    width: 60%;
 }
 .container-ads
-{   display: flex;
+{   
+    display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    row-gap: 14px;
+    justify-content: space-between;
+    height: 87%;
 }
 
-.block
-{   
-    background: whitesmoke;
-    padding:16px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px lightgrey;
-}
 .block-ad
 {
     background: white;
@@ -205,9 +199,12 @@ padding: 6px;
     flex-wrap: wrap;
     justify-content: space-around;
     flex-direction: column;
-    height: 240px;
-    width: 220px;
+    height: 205px;
+    width: 240px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px lightgrey;
 }
+
 .block.block-ad:hover 
 {
     transform: scale(1.015);
@@ -217,19 +214,30 @@ padding: 6px;
 
 .img-ad
 {
-    position:relative;
-    flex:1;
-    z-index:15;
+    position: relative;
+    flex: 1;
+    z-index: 15;
 }
 
 .img-ad-cropped
 {
     position: absolute;
-    height:100%;
-    width: 100%;
-    border-top-right-radius: 8px;
-    border-top-left-radius:8px;
+    height: 120px;
+    width: 240px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
     object-fit: cover;
+}
+.block-ad> div
+{
+
+}
+.block-ad> h3
+{
+    padding-left: 5px;
+    padding-right: 0px;
+    padding-top: 5px;
+    padding-bottom: 0px;
 }
                                                 /*  SIDE  */
 .container-aside
@@ -238,14 +246,15 @@ padding: 6px;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-around;
-    row-gap: 35px;
+    row-gap: 15px;
     width: 100%;
+    height: 89%;
 }
 .aside
 {
     background: whitesmoke;
-    padding: 16px;
-    border-radius: 10px;
+    padding: 30px;
+    border-radius: 20px;
     box-shadow: 2px 2px 5px lightgrey;
     width: 27%;
     
@@ -260,23 +269,22 @@ padding: 6px;
 .img-ad-cropped-side
 {
     position: absolute;
-    height:100%;
-    width: 100%;
-    border-bottom-left-radius: 8px;
-    border-top-left-radius:8px;
-    
+    height:140px;
+    width: 140px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius:20px;
 }
 
 .block-side
 {
     background: white;
-    padding:16px;
-    border-radius: 10px;
+    padding:5px;
+    border-radius: 20px;
     box-shadow: 2px 2px 5px lightgrey;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    height: 132px;
+    height: 140px;
 }
 .block-side:hover 
 {
@@ -293,13 +301,30 @@ padding: 6px;
     position:relative;
     flex:1;
     z-index:15;
+    width: 300px;
+}
+.img-ad-act
+{
+    position: absolute;
+    height: 120px;
+    width: 240px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    object-fit: cover;
 }
 .container-activites
 {
-    display:grid;
-    grid-template-areas: "a b d e"
-                        "a c d f";
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius: 20px;
 }
+.container-activites:nth-child(3n+1)
+{
+    height: 400px;
+    width: 200px;
+}
+
 .block-ac
 {
     background: white;
@@ -312,7 +337,7 @@ padding: 6px;
 {   
     background: whitesmoke;
     padding:16px;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 2px 2px 5px lightgrey;
 }
 
@@ -356,57 +381,17 @@ padding: 6px;
                                     
 @media only screen and (min-width: 992px)
 {
-    .container-ads 
-    {
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: 240px 240px;
-    }
-    
+
 
   }
   
 @media only screen and (min-width: 576px) and (max-width: 992px) 
 {
-    .container-ads 
-    {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 256px 256px 256px;
-    }
-    .container-ads2
-    {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
     
-    .all-herbergements
-    {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        column-gap: 24px;
-    }
     
 }
 
   @media only screen and (min-width: 0px) and (max-width: 576px) 
   {
-    .container-ads 
-    {
-        grid-template-columns: 1fr;
-        grid-template-rows: 256px 256px 256px 256px 256px 256px;
-    }
-    .container-ads2
-    {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-    .container-adsa
-    {
-        display: flex;
-    }
-    .all-hebergements
-    {
-        display:grid;
-        grid-template-columns:1fr;   
-        row-gap: 30px;
-    }
+
   }
