@@ -13,45 +13,40 @@ body
 
 h1                                    
 {
-    font-weight: bold;
+    
 }
 
 h2
 {
     padding-bottom: 10px;
-    font-weight: bold;
+    
 }
 h3
 {
-    display: flex;
-    flex-wrap: wrap;
+
     font-size: medium;
 }
 h4
 {
-    font-size: medium;
-    font-weight: bold;
+    font-size: x-large;
+    
 }
 h5
 {
-    font-weight: bold;
-    padding: 15px;
+font-size:medium;
+margin:0px;
+padding-top: 5%;
+padding-bottom: 4%;
+
 }
 h6
 {
     font-size: 24px;
-    font-weight: bold;
     padding-top: 50px;
     padding-left: 20px;
     margin: 0px;
 }
-h7
-{
-    font-weight: bold;
-    padding-left:1px;
-    padding-top: 1px;
-    padding-bottom:1px;
-}
+
                                             /*HEAD*/
 header
 {
@@ -66,6 +61,10 @@ header
     width: 100px;
     height: 50px;
 }
+nav
+{
+    width: 35%;
+}
 
 nav.conteneur                            /*la liste: hebergements, activités, s'inscrire */
 {
@@ -77,14 +76,21 @@ nav.conteneur                            /*la liste: hebergements, activités, s
                                         /*style la liste: hebergements,...*/
 nav ul                                      
 {
+    justify-content: space-evenly;
     list-style-type: none;
-    display:flex;
+    display: flex;
+    align-content: space-between;
 }
 
 nav li a 
 {
     padding-top: 20px;
     padding-right: 10px;
+    text-decoration: none;
+}
+nav li 
+{
+    align-content: space-around;
 }
 nav li a:hover 
 {
@@ -201,41 +207,42 @@ padding: 6px;
 {
     display:flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     
 }
 .block-first                        /* Premier block heberg...*/
 {   
-    display: flex;
-    flex-wrap: wrap;
     background: whitesmoke;
-    padding: 30px;
     border-radius: 20px;
     box-shadow: 2px 2px 5px lightgrey;
-    width: 60%;
+    width: 66%;
+    height: 600px;
 }
 .container-ads
 {   
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    height: 87%;
+    justify-content: space-evenly;
+    height: 73%;
+    row-gap: 30px;
+    padding-top: 1%;
 }
 
-.block-ad
+.block-heb
 {
     background: white;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     flex-direction: column;
-    height: 205px;
-    width: 240px;
+    height: 42%;
+    width: 27%;
     border-radius: 20px;
     box-shadow: 2px 2px 5px lightgrey;
+    padding:5px;
 }
 
-.block.block-ad:hover 
+.block.block-heb:hover 
 {
     transform: scale(1.015);
     cursor: pointer;
@@ -248,12 +255,16 @@ padding: 6px;
     flex: 1;
     z-index: 15;
 }
-
+.block.block-heb > div h3 
+{
+padding-left: 5px;
+padding-top: 3px;
+}
 .img-ad-cropped
 {
     position: absolute;
-    height: 120px;
-    width: 240px;
+    height: 105%;
+    width: 100%;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     object-fit: cover;
@@ -265,48 +276,53 @@ padding: 6px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     row-gap: 15px;
     width: 100%;
-    height: 89%;
+    height: 80%;
 }
 .aside
 {
     background: whitesmoke;
-    padding: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
     border-radius: 20px;
     box-shadow: 2px 2px 5px lightgrey;
     width: 27%;
-    
+    height: 600px;
 }
-.img-side
+.img-populaires
 {
     position:relative;
     flex:1;
     z-index:15;
 }
 
-.img-ad-cropped-side
+.image-popu
 {
     position: absolute;
-    height:140px;
-    width: 140px;
+    width: 90%;
+    height: 100%;
     border-bottom-left-radius: 20px;
-    border-top-left-radius:20px;
+    border-top-left-radius: 20px;
 }
-
-.block-side
+.legende
+{
+    width: 65%;
+}
+.cube-side
 {
     background: white;
-    padding:5px;
+    padding: 5px;
     border-radius: 20px;
     box-shadow: 2px 2px 5px lightgrey;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    height: 140px;
+    justify-content: space-between;
+    height: 27%;
+    width: 97%;
 }
-.block-side:hover 
+.cube-side:hover 
 {
     transform: scale(1.015);
     cursor: pointer;
@@ -328,7 +344,7 @@ padding: 6px;
     width: 100%;
     align-items: center;
     padding-top: 15px;
-    padding-bottom: 15px;
+    padding-bottom: 40px;
 }
 
 .block-activite1 
@@ -531,7 +547,7 @@ padding: 6px;
     border-radius: 20px 20px 0px 0px;
 }
 
-.block-activite:hover
+.block-activite1:hover
 {
     transform: scale(1.015);
     cursor: pointer;
@@ -541,12 +557,12 @@ padding: 6px;
 
 .footer 
 {
-    max-width: 100%;
     margin: 0px;
     background-color: #F2F2F2;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    position: absolute;
 }
 .nav-footer
 {
@@ -575,7 +591,7 @@ padding: 6px;
 
                                     /*       SCREEN      */
                                     
-@media only screen and (min-width: 992px)
+/*@media only screen and (min-width: 992px)
 {
 .block-first
 {
