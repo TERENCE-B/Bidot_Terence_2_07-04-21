@@ -29,15 +29,15 @@ h3
 h4
 {
     font-size: x-large;
-    
+    padding-left: 3%;
 }
 h5
 {
-font-size:medium;
-margin:0px;
-padding-top: 5%;
-padding-bottom: 4%;
-
+    font-size:medium;
+    margin:0px;
+    padding-top: 5%;
+    padding-bottom: 4%;
+    padding-left: 3%;
 }
 h6
 {
@@ -101,26 +101,28 @@ nav li a:hover
 
 .icone-recherche                        /*icone et bouton recherche*/
 {
-display: flex;
-flex-wrap: wrap;
-flex-direction: row;
-height:30px;
-color: #0065FC;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height:30px;
+    color: #0065FC;
 }
 
 button                                      /*bouton*/
 {
-color:white;
-background-color:#0065FC;
+    color:white;
+    background-color:#0065FC;
 }
 
 .allfiltres                             /*la ligne "filtres" */
 {
-display:flex;
-flex-wrap: wrap;
-flex-direction: row;
-align-items: center;
-justify-content:flex-start;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content:flex-start;
+    margin-top: 5px;
+    margin-left: 5px;
 } 
 .iconemot                               /* icone et le mot*/
 {
@@ -202,14 +204,13 @@ padding: 6px;
     display: flex;
     flex-direction: row;
     padding-bottom: 3%;
-
 }
 
 .all-hebergements                   /* HEBERGEMENTS et ASIDE */
 {
     display:flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     
 }
 .block-first                        /* Premier block heberg...*/
@@ -219,6 +220,7 @@ padding: 6px;
     box-shadow: 2px 2px 5px lightgrey;
     width: 66%;
     height: 600px;
+    margin-bottom: 10px;
 }
 .container-ads
 {   
@@ -285,6 +287,8 @@ padding-top: 3px;
 }
 .aside
 {
+    display: flex;
+    flex-wrap: wrap;
     background: whitesmoke;
     padding-left: 30px;
     padding-right: 30px;
@@ -555,6 +559,36 @@ padding-top: 3px;
     cursor: pointer;
     transition-duration: 0.2s;
 }
+.block-activite2:hover
+{
+    transform: scale(1.015);
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+.block-activite3:hover
+{
+    transform: scale(1.015);
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+.block-activite4:hover
+{
+    transform: scale(1.015);
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+.block-activite5:hover
+{
+    transform: scale(1.015);
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+.block-activite6:hover
+{
+    transform: scale(1.015);
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
                                                 /*     FOOTER      */
 
 .footer 
@@ -596,10 +630,8 @@ padding-top: 3px;
                                     
 @media only screen and (min-width: 992px)
 {
-.all-hebergements
-{
-    width: 100%;
-}
+    
+
 
 }
   
@@ -608,6 +640,11 @@ padding-top: 3px;
     .block-first
     {
         width:100%;
+        height: auto;
+    }
+    .block-heb
+    {
+        width:40%;
     
     }
     .aside
@@ -619,12 +656,59 @@ padding-top: 3px;
     {
         width: 100%;
     }  
-    
+    .block-activite1
+    {
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+    }
+    .block-act23
+    {
+        width: 47%;
+    }
+    .block-activite2
+    {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .block-activite3
+    {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .block-activite4
+    {
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+    }
+    .block-act56
+    {
+        width: 47%;
+    }
+    .block-activite5
+    {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .block-activite6
+    {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
 }
 
 @media only screen and (min-width: 0px) and (max-width: 575px) 
 {
     .block-first
+    {
+        width: 100%;
+    }
+    .block-heb
     {
         width:100%;
     
@@ -633,7 +717,56 @@ padding-top: 3px;
     {
         width: 100%;
     }
-    .img-act1.img-act2.img-act3
+    .footer
+    {
+        width: 100%;
+    }
+    .block-activite1
+    {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        
+    }
+    .block-act23
+    {
+        width: 100%;
+        height: auto;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+    .block-activite2
+    {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .block-activite3
+    {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .block-activite4
+    {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .block-act56
+    {
+        width: 100%;
+        height: auto;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+    .block-activite5
+    {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .block-activite6
     {
         display: flex;
         flex-wrap: wrap;
