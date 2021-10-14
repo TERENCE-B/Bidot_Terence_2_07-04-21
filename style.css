@@ -19,12 +19,11 @@ h1
 h2
 {
     padding-bottom: 10px;
-    
 }
 h3
 {
-
     font-size: medium;
+    padding-left: 3%;
 }
 h4
 {
@@ -37,7 +36,6 @@ h5
     margin:0px;
     padding-top: 5%;
     padding-bottom: 4%;
-    padding-left: 3%;
 }
 h6
 {
@@ -219,8 +217,6 @@ padding: 6px;
     border-radius: 20px;
     box-shadow: 2px 2px 5px lightgrey;
     width: 66%;
-    height: 600px;
-    margin-bottom: 10px;
 }
 .container-ads
 {   
@@ -273,8 +269,18 @@ padding-top: 3px;
     border-top-left-radius: 20px;
     object-fit: cover;
 }
-
-                                                /*  SIDE  */
+.fa-star
+{
+    color: #0065FC;
+    display:flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+.fas[data-active="false"] 
+{
+    color: #d9d9d9;
+}
+                                                /*  SIDE LES PLUS POPULAIRES */
 .container-aside
 {
     display: flex;
@@ -295,7 +301,12 @@ padding-top: 3px;
     border-radius: 20px;
     box-shadow: 2px 2px 5px lightgrey;
     width: 27%;
-    height: 600px;
+}
+.fa-chart-line
+{
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
 }
 .img-populaires
 {
@@ -605,8 +616,7 @@ padding-top: 3px;
 {
     display: flex;
     flex-direction: column;
-    padding: 20px 86px;
-    margin: 0px 80px 0px 0px;
+    width: 30%;
 }
 .nav-footer li 
 {
@@ -717,7 +727,7 @@ padding-top: 3px;
     {
         width: 100%;
     }
-    .footer
+    .nav-footer
     {
         width: 100%;
     }
