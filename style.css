@@ -206,10 +206,12 @@ padding: 6px;
 
 .all-hebergements                   /* HEBERGEMENTS et ASIDE */
 {
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
+    height: auto;
+
 }
 .block-first                        /* Premier block heberg...*/
 {   display: flex;
@@ -217,7 +219,7 @@ padding: 6px;
     background: #F2F2F2;
     border-radius: 20px;
     box-shadow: 2px 2px 5px lightgrey;
-    width: 61%;
+    width: 60%;
     height: auto;
     padding: 2rem;
 }
@@ -225,9 +227,10 @@ padding: 6px;
 {   
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 100%;
-    height: auto;
+    height: 51%;
+    row-gap: 40px;
     flex-direction: row;
 }
 
@@ -238,12 +241,12 @@ padding: 6px;
     flex-wrap: wrap;
     justify-content: space-between;
     flex-direction: column;
-    width: 27%;
-    height: 42%;
+    width: 29%;
+    height: 67%;
     border-radius: 20px;
     box-shadow: 2px 2px 5px lightgrey;
     padding: 5px;
-    margin: 20px;
+    
 }
 
 .block-heb:hover 
@@ -303,11 +306,10 @@ padding: 6px;
     display: flex;
     flex-wrap: wrap;
     background: whitesmoke;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 2rem;
     border-radius: 20px;
     box-shadow: 2px 2px 5px lightgrey;
-    width: 27%;
+    width: 29%;
 }
 .fa-chart-line
 {
@@ -628,7 +630,7 @@ padding: 6px;
 {
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 28%;
 }
 .nav-footer li 
 {
@@ -650,9 +652,14 @@ padding: 6px;
 
                                     /*       SCREEN      */
                                     
-@media only screen and (min-width: 992px)
+@media only screen and (min-width: 992px) and (max-width: 1143px)
 {
     
+block-heb
+{
+    width: 27%;
+    height: 28%;
+}
 
 
 }
@@ -661,17 +668,17 @@ padding: 6px;
 {
     .block-first
     {
-        width:100%;
+        width: 100%;
         height: auto;
     }
     .block-heb
     {
-        width:40%;
-    
+        
     }
     .aside
     {
         width: 100%;
+        height: auto;
     }
     
     .footer
