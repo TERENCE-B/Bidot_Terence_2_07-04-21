@@ -206,10 +206,12 @@ padding: 6px;
 
 .all-hebergements                   /* HEBERGEMENTS et ASIDE */
 {
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
+    height: auto;
+
 }
 .block-first                        /* Premier block heberg...*/
 {   display: flex;
@@ -217,17 +219,18 @@ padding: 6px;
     background: #F2F2F2;
     border-radius: 20px;
     box-shadow: 2px 2px 5px lightgrey;
-    width: 61%;
+    width: 60%;
     height: auto;
-    padding: 2rem;
+    padding: 20px;
 }
 .container-ads
 {   
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 100%;
-    height: auto;
+    height: 51%;
+    row-gap: 40px;
     flex-direction: row;
 }
 
@@ -238,12 +241,11 @@ padding: 6px;
     flex-wrap: wrap;
     justify-content: space-between;
     flex-direction: column;
-    width: 27%;
-    height: 42%;
+    width: 29%;
     border-radius: 20px;
     box-shadow: 2px 2px 5px lightgrey;
     padding: 5px;
-    margin: 20px;
+    
 }
 
 .block-heb:hover 
@@ -303,13 +305,13 @@ padding: 6px;
     display: flex;
     flex-wrap: wrap;
     background: whitesmoke;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 2rem;
     border-radius: 20px;
     box-shadow: 2px 2px 5px lightgrey;
-    width: 27%;
+    width: 29%;
+    padding: 20px;
 }
-.fa-chart-line
+.fas.fa-chart-line
 {
     margin: 0;
     display: flex;
@@ -628,7 +630,7 @@ padding: 6px;
 {
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 28%;
 }
 .nav-footer li 
 {
@@ -650,7 +652,7 @@ padding: 6px;
 
                                     /*       SCREEN      */
                                     
-@media only screen and (min-width: 992px)
+@media only screen and (min-width: 992px) and (max-width: 1143px)
 {
     
 
@@ -661,19 +663,23 @@ padding: 6px;
 {
     .block-first
     {
-        width:100%;
+        width: 100%;
         height: auto;
+        margin-bottom: 20px;
     }
     .block-heb
     {
-        width:40%;
-    
+        
     }
     .aside
     {
         width: 100%;
+        height: auto;
     }
-    
+    .nav-footer
+    {
+        width: 100%;
+    }
     .footer
     {
         width: 100%;
@@ -682,45 +688,57 @@ padding: 6px;
     {
         display: flex;
         flex-wrap: wrap;
-        width: 50%;
+        width: 100%;
+        height: 200px;
+        margin-bottom: 10px;
+        padding-bottom: 17px;
     }
     .block-act23
     {
-        width: 47%;
+        width: 100%;
     }
     .block-activite2
     {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
+        height: 200px;
     }
     .block-activite3
     {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
+        height: 200px;
+        margin-bottom: 10px;
+        padding-bottom: 17px;
     }
     .block-activite4
     {
         display: flex;
         flex-wrap: wrap;
-        width: 50%;
+        width: 100%;
+        height: 200px;
+        margin-bottom: 10px;
+        padding-bottom: 17px;
     }
     .block-act56
     {
-        width: 47%;
+        width: 100%;
     }
     .block-activite5
     {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
+        height: 200px;
     }
     .block-activite6
     {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
+        height: 200px;
     }
 }
 
@@ -729,11 +747,12 @@ padding: 6px;
     .block-first
     {
         width: 100%;
+        height: auto;
+        margin-bottom: 20px;
     }
     .block-heb
     {
         width:100%;
-    
     }
     .aside
     {
@@ -748,50 +767,55 @@ padding: 6px;
         display: flex;
         flex-wrap: wrap;
         width: 100%;
-        
+        height: 200px;
+        margin-bottom: 10px;
+        padding-bottom: 17px;
     }
     .block-act23
     {
         width: 100%;
-        height: auto;
-        padding-top: 3%;
-        padding-bottom: 3%;
     }
     .block-activite2
     {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
+        height: 200px;
     }
     .block-activite3
     {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
+        height: 200px;
+        margin-bottom: 10px;
+        padding-bottom: 17px;
     }
     .block-activite4
     {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
+        height: 200px;
+        margin-bottom: 10px;
+        padding-bottom: 17px;
     }
     .block-act56
     {
         width: 100%;
-        height: auto;
-        padding-top: 3%;
-        padding-bottom: 3%;
     }
     .block-activite5
     {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
+        height: 200px;
     }
     .block-activite6
     {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
+        height: 200px;
     }
 }
