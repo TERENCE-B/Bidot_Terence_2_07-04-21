@@ -48,20 +48,24 @@ h6
                                             /*HEAD*/
 header
 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content:space-between;
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    grid-template-areas: "L . h s";
+    align-items: center;
 }
 
-#Logo img                                /*logo reservia*/
+#Logo img                               /*logo reservia*/
 {
-    width: 100px;
     height: 50px;
+}
+#Logo
+{
+    grid-area: L;
 }
 nav
 {
-    width: 35%;
+    /*display: flex;
+    justify-content: flex-end;*/
 }
 
 nav.conteneur                            /*la liste: hebergements, activités, s'inscrire */
@@ -71,6 +75,14 @@ nav.conteneur                            /*la liste: hebergements, activités, s
     flex-direction: row;
     
 }
+.nav-h
+{
+    grid-area: h;
+}
+.nav-s
+{
+    grid-area: s;
+}
                                         /*style la liste: hebergements,...*/
 nav ul                                      
 {
@@ -78,17 +90,18 @@ nav ul
     list-style-type: none;
     display: flex;
     align-content: space-between;
+    padding-left: 0px;
+    
 }
 
 nav li a 
 {
-    padding-top: 20px;
-    padding-right: 10px;
     text-decoration: none;
 }
 nav li 
 {
     align-content: space-around;
+    padding: 30px;
 }
 nav li a:hover 
 {
@@ -221,7 +234,7 @@ padding: 6px;
     box-shadow: 2px 2px 5px lightgrey;
     width: 60%;
     height: auto;
-    padding: 2rem;
+    padding: 20px;
 }
 .container-ads
 {   
@@ -242,7 +255,6 @@ padding: 6px;
     justify-content: space-between;
     flex-direction: column;
     width: 29%;
-    height: 67%;
     border-radius: 20px;
     box-shadow: 2px 2px 5px lightgrey;
     padding: 5px;
@@ -310,12 +322,13 @@ padding: 6px;
     border-radius: 20px;
     box-shadow: 2px 2px 5px lightgrey;
     width: 29%;
+    padding: 20px;
 }
-.fa-chart-line
+.titre-icone
 {
-    margin: 0;
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 .img-populaires
 {
@@ -655,11 +668,6 @@ padding: 6px;
 @media only screen and (min-width: 992px) and (max-width: 1143px)
 {
     
-block-heb
-{
-    width: 27%;
-    height: 28%;
-}
 
 
 }
@@ -670,17 +678,18 @@ block-heb
     {
         width: 100%;
         height: auto;
+        margin-bottom: 20px;
     }
-    .block-heb
-    {
-        
-    }
+    
     .aside
     {
         width: 100%;
         height: auto;
     }
-    
+    .nav-footer
+    {
+        width: 100%;
+    }
     .footer
     {
         width: 100%;
@@ -689,58 +698,84 @@ block-heb
     {
         display: flex;
         flex-wrap: wrap;
-        width: 50%;
+        width: 100%;
+        height: 200px;
+        margin-bottom: 10px;
+        padding-bottom: 17px;
     }
     .block-act23
     {
-        width: 47%;
+        width: 100%;
     }
     .block-activite2
     {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
+        height: 200px;
     }
     .block-activite3
     {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
+        height: 200px;
+        margin-bottom: 10px;
+        padding-bottom: 17px;
     }
     .block-activite4
     {
         display: flex;
         flex-wrap: wrap;
-        width: 50%;
+        width: 100%;
+        height: 200px;
+        margin-bottom: 10px;
+        padding-bottom: 17px;
     }
     .block-act56
     {
-        width: 47%;
+        width: 100%;
     }
     .block-activite5
     {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
+        height: 200px;
     }
     .block-activite6
     {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
+        height: 200px;
     }
 }
 
 @media only screen and (min-width: 0px) and (max-width: 575px) 
 {
+    header 
+    {
+       grid-template-columns: auto 1fr auto;
+       grid-template-areas: "L . s" "h h h"; 
+       
+    }
+    .nav-h
+    {
+        
+        width: 100%;
+        align-items: center;
+    }
+    
     .block-first
     {
         width: 100%;
+        height: auto;
+        margin-bottom: 20px;
     }
     .block-heb
     {
         width:100%;
-    
     }
     .aside
     {
@@ -755,50 +790,55 @@ block-heb
         display: flex;
         flex-wrap: wrap;
         width: 100%;
-        
+        height: 200px;
+        margin-bottom: 10px;
+        padding-bottom: 17px;
     }
     .block-act23
     {
         width: 100%;
-        height: auto;
-        padding-top: 3%;
-        padding-bottom: 3%;
     }
     .block-activite2
     {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
+        height: 200px;
     }
     .block-activite3
     {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
+        height: 200px;
+        margin-bottom: 10px;
+        padding-bottom: 17px;
     }
     .block-activite4
     {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
+        height: 200px;
+        margin-bottom: 10px;
+        padding-bottom: 17px;
     }
     .block-act56
     {
         width: 100%;
-        height: auto;
-        padding-top: 3%;
-        padding-bottom: 3%;
     }
     .block-activite5
     {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
+        height: 200px;
     }
     .block-activite6
     {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
+        height: 200px;
     }
 }
