@@ -329,6 +329,7 @@ padding: 6px;
     display: flex;
     justify-content: space-between;
     width: 100%;
+    align-items: baseline;
 }
 .img-populaires
 {
@@ -390,7 +391,13 @@ padding: 6px;
     padding-top: 15px;
     padding-bottom: 40px;
 }
-
+span
+{
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: medium;
+    font-weight: bold;
+}
 .block-activite1 
 {   
     display: flex;
@@ -697,22 +704,26 @@ padding: 6px;
     .block-activite1
     {
         display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        height: 200px;
-        margin-bottom: 10px;
-        padding-bottom: 17px;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+
     }
     .block-act23
     {
         width: 100%;
+        padding-bottom: 55px;
     }
     .block-activite2
     {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 29px;
+    padding-bottom: 10px;
     }
     .block-activite3
     {
@@ -729,8 +740,8 @@ padding: 6px;
         flex-wrap: wrap;
         width: 100%;
         height: 200px;
-        margin-bottom: 10px;
-        padding-bottom: 17px;
+        margin-bottom: 30px;
+        padding-bottom: 20px;
     }
     .block-act56
     {
@@ -788,22 +799,26 @@ padding: 6px;
     .block-activite1
     {
         display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        height: 200px;
-        margin-bottom: 10px;
-        padding-bottom: 17px;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+
     }
     .block-act23
     {
         width: 100%;
+        padding-bottom: 55px;
     }
     .block-activite2
     {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 29px;
+    padding-bottom: 10px;
     }
     .block-activite3
     {
@@ -820,8 +835,8 @@ padding: 6px;
         flex-wrap: wrap;
         width: 100%;
         height: 200px;
-        margin-bottom: 10px;
-        padding-bottom: 17px;
+        margin-bottom: 30px;
+        padding-bottom: 20px;
     }
     .block-act56
     {
