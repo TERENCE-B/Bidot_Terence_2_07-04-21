@@ -6,9 +6,10 @@
 
 body
 {
-    font-family: 'raleaway',Arial,sans-serif;
+    font-family: 'raleway',Arial,sans-serif;
     font-size: 16px;
     color: black;
+    margin: 0px;
 }
 
 h1                                    
@@ -23,7 +24,8 @@ h2
 h3
 {
     font-size: medium;
-    
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
 h4
 {
@@ -61,6 +63,7 @@ header
 #Logo
 {
     grid-area: L;
+    padding-left: 10%;
 }
 nav
 {
@@ -84,6 +87,12 @@ nav.conteneur                            /*la liste: hebergements, activités, s
     grid-area: s;
 }
                                         /*style la liste: hebergements,...*/
+.debut
+{
+padding-left: 1%;
+padding-right: 1%;
+}
+
 nav ul                                      
 {
     justify-content: space-evenly;
@@ -103,7 +112,7 @@ nav li
     align-content: space-around;
     padding: 30px;
 }
-nav li a:hover 
+nav li:hover 
 {
     border-top: solid 2px #0065FC;
     text-decoration: none;
@@ -116,13 +125,39 @@ nav li a:hover
     flex-wrap: wrap;
     flex-direction: row;
     height:30px;
-    color: #0065FC;
+    color:black;
 }
-
-button                                      /*bouton*/
+.map-market-alt                             /*map market */
 {
-    color:white;
-    background-color:#0065FC;
+    height: 40px;
+    min-width: 4%;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F2F2F2;
+    border-radius: 20px 0px 0px 20px;
+}
+input                                       /*carre marseille */
+{
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid#F2F2F2;
+}
+button                                      /*bouton rechercher*/
+{
+    height: 39px;
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px 20px 20px 0px;
+    background-color: #0065FC;
+    padding: 0px 20px 0px 20px;
+    color: white;
+    font-size: 14px;
 }
 
 .allfiltres                             /*la ligne "filtres" */
@@ -221,7 +256,7 @@ padding: 6px;
 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
     height: auto;
 
@@ -235,6 +270,20 @@ padding: 6px;
     width: 60%;
     height: auto;
     padding: 20px;
+}
+.block-first span
+{
+    padding-left: 1%;
+    padding-top: 10px;
+    font-size: larger;
+    font-weight: bold;
+    color: grey;
+}
+.block-first span:hover
+{
+    transform: scale(1.015);
+    cursor: pointer;
+    transition-duration: 0.2s;
 }
 .container-ads
 {   
@@ -290,6 +339,7 @@ padding: 6px;
 .block-heb li, .cube-side li
 {
     list-style-type: none;
+    margin-bottom: 10px;
 }
 .fa-star
 {
@@ -302,6 +352,7 @@ padding: 6px;
 {
     color: #d9d9d9;
 }
+
                                                 /*  SIDE LES PLUS POPULAIRES */
 .container-aside
 {
@@ -353,7 +404,7 @@ padding: 6px;
     width: 46%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .cube-side
 {
@@ -383,7 +434,7 @@ padding: 6px;
 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     border-radius: 20px;
     height: auto;
     width: 100%;
@@ -783,6 +834,8 @@ span
         width: 100%;
         height: auto;
         margin-bottom: 20px;
+        order: 2;
+        background-color: white;
     }
     .block-heb
     {
@@ -791,6 +844,7 @@ span
     .aside
     {
         width: 100%;
+        order: 1;
     }
     .nav-footer
     {
