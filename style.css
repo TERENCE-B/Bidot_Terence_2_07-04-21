@@ -11,12 +11,9 @@ body
     color: black;
     margin: 0px;
     max-width: 1440px;
+    margin-inline: auto;
 }
 
-h1                                    
-{
-    
-}
 
 h2
 {
@@ -66,11 +63,7 @@ header
     grid-area: L;
     padding-left: 10%;
 }
-nav
-{
-    /*display: flex;
-    justify-content: flex-end;*/
-}
+
 
 nav.conteneur                            /*la liste: hebergements, activités, s'inscrire */
 {
@@ -359,11 +352,10 @@ padding: 6px;
 {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
     justify-content: space-evenly;
     row-gap: 15px;
     width: 100%;
-    height: 80%;
+    height: 76%;
 }
 .aside
 {
@@ -402,10 +394,9 @@ padding: 6px;
 }
 .legende
 {
-    width: 46%;
+    width: 40%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
 }
 .cube-side
 {
@@ -414,11 +405,12 @@ padding: 6px;
     border-radius: 20px;
     box-shadow: 2px 2px 5px lightgrey;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    height: 28%;
-    width: 98%;
+    height: 140px;
+    row-gap: 25px;
+    width: 100%;
 }
+
 .cube-side:hover 
 {
     transform: scale(1.015);
@@ -697,6 +689,7 @@ span
     justify-content: flex-start;
     position: absolute;
     width: 100%;
+    max-width: 1440px;
 }
 .nav-footer
 {
@@ -743,7 +736,7 @@ span
     .aside
     {
         width: 100%;
-        height: auto;
+        height: 630px;
     }
     .nav-footer
     {
@@ -815,7 +808,7 @@ span
     }
 }
 
-@media only screen and (min-width: 0px) and (max-width: 575px) 
+@media only screen and (min-width: 0px) and (max-width: 575px) /*mobile*/
 {
     header 
     {
@@ -837,6 +830,8 @@ span
         margin-bottom: 20px;
         order: 2;
         background-color: white;
+        border-radius: 0px 0px 0px 0px;
+        box-shadow: 0px 0px 0px 0px;
     }
     .block-heb
     {
@@ -846,6 +841,7 @@ span
     {
         width: 100%;
         order: 1;
+        height: 630px;
     }
     .nav-footer
     {
