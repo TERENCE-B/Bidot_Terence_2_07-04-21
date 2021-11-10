@@ -83,8 +83,8 @@ nav.conteneur                            /*la liste: hebergements, activités, s
                                         /*style la liste: hebergements,...*/
 .debut
 {
-padding-left: 1%;
-padding-right: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
 }
 
 nav ul                                      
@@ -94,7 +94,6 @@ nav ul
     display: flex;
     align-content: space-between;
     padding-left: 0px;
-    
 }
 
 nav li a 
@@ -102,24 +101,21 @@ nav li a
     text-decoration: none;
 }
 nav li 
-<<<<<<< HEAD
-=======
 {
     align-content: space-around;
     padding: 30px;
 }
 nav li:hover 
->>>>>>> cd2ec505357105cdaaf6db8b1ada045e6e5b75d1
 {
     align-content: space-around;
     padding: 30px;
 }
-<<<<<<< HEAD
+
 nav li:hover 
 {
     border-bottom: solid 2px #0065FC;
     text-decoration: none;   
-=======
+}
 
 .icone-recherche                        /*icone et bouton recherche*/
 {
@@ -128,48 +124,32 @@ nav li:hover
     flex-direction: row;
     height:30px;
     color:black;
->>>>>>> cd2ec505357105cdaaf6db8b1ada045e6e5b75d1
+
 }
+
 .map-market-alt                             /*map market */
 {
-<<<<<<< HEAD
+    width: 45px;
+    font-size: 16px;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
     flex-wrap: wrap;
     flex-direction: row;
-    height:30px;
     color:black;
 }
-.map-market-alt                             /*map market */
-{
-    height: 40px;
-    min-width: 4%;
-    font-size: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #F2F2F2;
-    border-radius: 20px 0px 0px 20px;
-}
+
+
 input                                       /*carre marseille */
 {
-=======
-    height: 40px;
-    min-width: 4%;
-    font-size: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #F2F2F2;
-    border-radius: 20px 0px 0px 20px;
-}
-input                                       /*carre marseille */
-{
->>>>>>> cd2ec505357105cdaaf6db8b1ada045e6e5b75d1
     height: 32px;
     display: flex;
     align-items: center;
     justify-content: center;
     border: 3px solid#F2F2F2;
+    padding-left: 10px;
 }
 button                                      /*bouton rechercher*/
 {
