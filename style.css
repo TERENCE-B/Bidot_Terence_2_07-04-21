@@ -108,9 +108,8 @@ nav li
 }
 nav li:hover 
 {
-    border-top: solid 2px #0065FC;
-    text-decoration: none;
-    
+    border-bottom: solid 2px #0065FC;
+    text-decoration: none;   
 }
 
 .icone-recherche                        /*icone et bouton recherche*/
