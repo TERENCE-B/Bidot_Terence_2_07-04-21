@@ -1,8 +1,3 @@
-                                            /*POLICE*/
-@font-face
-{
-	font-family: 'raleway' ,sans-serif;
-} 
 
 body
 {
@@ -500,7 +495,7 @@ span
     border-radius: 20px;
     box-shadow: 2px 2px 5px lightgrey;
     width: 100%;
-    height: 47%;
+    height: 52%;
     align-items: flex-end;
     text-decoration: none;
     background-color: whitesmoke;
@@ -532,7 +527,7 @@ span
     border-radius: 20px;
     box-shadow: 2px 2px 5px lightgrey;
     width: 100%;
-    height: 47%;
+    height: 44%;
     align-items: flex-end;
     text-decoration: none;
     background-color: whitesmoke;
@@ -600,7 +595,7 @@ span
     border-radius: 20px;
     box-shadow: 2px 2px 5px lightgrey;
     width: 100%;
-    height: 47%;
+    height: 44%;
     align-items: flex-end;
     text-decoration: none;
     background-color: whitesmoke;
@@ -630,7 +625,7 @@ span
     border-radius: 20px;
     box-shadow: 2px 2px 5px lightgrey;
     width: 100%;
-    height: 47%;
+    height: 52%;
     align-items: flex-end;
     text-decoration: none;
     background-color: whitesmoke;
@@ -727,13 +722,6 @@ span
 }
 
                                     /*       SCREEN      */
-                                    
-@media only screen and (min-width: 992px) and (max-width: 1143px)
-{
-    
-
-
-}
   
 @media only screen and (min-width: 576px) and (max-width: 991px) 
 {
