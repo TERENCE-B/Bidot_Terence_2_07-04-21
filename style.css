@@ -38,10 +38,7 @@ h6 {
 
                                             /*HEAD*/
 header {
-    display: grid;
-    grid-template-columns: auto 1fr auto auto;
-    grid-template-areas: "L . h s";
-    align-items: center;
+    display: flex;
 }
 
 #Logo img {                              /*logo reservia*/
@@ -49,8 +46,9 @@ header {
 }
 
 #Logo {
-    grid-area: L;
-    padding-left: 10%;
+    
+    padding-left: 1%;
+    padding-top: 3%;
 }
 
 nav.conteneur {                           /*la liste: hebergements, activités, s'inscrire */
@@ -60,11 +58,15 @@ nav.conteneur {                           /*la liste: hebergements, activités, 
 }
 
 .nav-h {
-    grid-area: h;
+    display: flex;
+    align-items: center;
+    align-content: flex-end;
+    margin-left: auto;
+    order: 1;
 }
 
 .nav-s {
-    grid-area: s;
+    order: 2;
 }
                                         /*style la liste: hebergements,...*/
 .debut {
@@ -76,7 +78,6 @@ nav ul {
     justify-content: space-evenly;
     list-style-type: none;
     display: flex;
-    align-content: space-between;
     padding-left: 0px;
 }
 
@@ -769,13 +770,25 @@ span {
 
 @media only screen and (min-width: 0px) and (max-width: 575px) {           /*mobile*/
     header {
-       grid-template-columns: auto 1fr auto;
-       grid-template-areas: "L . s" "h h h"; 
+       display: flex;
+       flex-wrap: wrap;
     }
     
     .nav-h {
         width: 100%;
         align-items: center;
+        order: 2;
+        justify-content: space-evenly;
+    }
+
+    .nav-s {
+        order: 1;
+        display: flex;
+        flex: auto;
+    }
+
+    nav ul {
+        width: 100%;
     }
 
     nav li:hover {
