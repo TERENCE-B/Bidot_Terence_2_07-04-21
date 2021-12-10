@@ -1,0 +1,148 @@
+body {
+    margin: 0%;
+    
+}
+
+h1 {
+    font: bold;
+}
+
+h2 {
+    font: bold;
+}
+
+h3 {
+    font: bold;
+}
+
+header { 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #f2f2f2;
+    width: 100%;
+
+    img {
+        margin: auto;
+        padding: 30px;
+    }
+    .map-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 0%; 
+        background-color: #e5e5e5;
+        border-top: 3px solid grey;   
+    }
+    span {
+        display: flex;
+        align-items: center;
+        padding-left: 2%;
+        height: 30px;
+    }
+    div {
+        padding-bottom: 1%;
+    }
+    button {
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        height: 40px;
+        width:40%;
+        border-radius:20px;
+        background-color: pink;
+        align-items: center;
+    } 
+}
+
+.conteneur-f {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-left:1% ;
+
+    h2 {
+        display: flex;
+        width: 100%;
+        padding-left: 2%;
+    }
+    .bloc-fonction {
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 10px;
+        background-color: #f2f2f2;
+        height: 40px;
+        width: 100%;
+        align-items: center;
+        padding: 10px;
+        margin-bottom: 10px;
+        .fas{
+            padding-left:20px;
+            padding-right: 20px;
+        }
+
+    }
+}
+
+.conteneur-r {
+    padding-left: 2%;
+    padding-right: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    
+    h2 {
+       display: flex;
+       width: 100%;
+       padding-left: 2%; 
+    }
+
+        .bloc-rest {
+            display: flex;
+            flex-direction: column;
+            background: #F2F2F2;
+            border-radius: 20px;
+            box-shadow: 2px 2px 5px lightgrey;
+            width: 100%;
+            margin-bottom: 5%;
+            padding-bottom: 3%;
+
+            h3, span {
+                padding-left: 3%;
+            }
+            .fas {
+                display: flex;
+            }
+                
+        }
+    img {
+        height: 170px;
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        object-fit: cover;
+    }
+    
+}
+
+footer {
+    position: absolute;
+    background-color: #353535;
+    width: 100%;
+    color:white;
+    
+    li {
+        list-style-type: none;
+        padding: 2px;
+        .omf {  
+        font-size: 25px;  
+        color: #fff;
+        font-family: 'Shrikhand',"cursive";
+        }
+    }       
+}
